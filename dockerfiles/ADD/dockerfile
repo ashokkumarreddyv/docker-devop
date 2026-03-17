@@ -1,0 +1,6 @@
+FROM amazonlinux:2023
+RUN dnf install nginx -y
+RUN rm-rf /usr/share/nginix/html/index.html
+ADD https://github.com/ashokkumarreddyv/docker-devop/blob/main/dockerfiles/FROM/Dockerfile /usr/shar/nginx/html/index.html
+RUN chmod +r /usr/share/nginix/html/index.html
+CMD [ "nginx", "-g", "daemon off;" ]
