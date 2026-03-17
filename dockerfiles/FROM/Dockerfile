@@ -1,1 +1,1 @@
-FROM alpinelinux:9
+FROM alpinelinux:2023

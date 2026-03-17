@@ -1,2 +1,2 @@
-FROM amazonlinux:9
+FROM amazonlinux:2023
 RUN dnf install nginx -y
